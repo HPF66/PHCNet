@@ -1,0 +1,38 @@
+{
+  "cache_format": "position_stitched_residue_tokens_v1",
+  "records": 2211,
+  "exact_records": 1556,
+  "mean_sd_records": 655,
+  "unique_sequences": 782,
+  "chunked_sequences": 21,
+  "max_sequence_length": 3611,
+  "backbone_max_length": 512,
+  "chunk_residues": 480,
+  "chunk_overlap": 64,
+  "truncate_sequences": false,
+  "overlap_merge": "position_aligned_mean",
+  "pooling_stage": "after_stitch_in_trainable_adapter",
+  "caches": {
+    "esm8m": {
+      "file": "esm2_t6_8m_exact_plus_mean_sd_chunk480_overlap64_fp16.pt",
+      "backbone_model": "facebook/esm2_t6_8M_UR50D",
+      "backbone_type": "esm",
+      "bytes": 35268178,
+      "sha256": "3316c178db7c4e1652a418bffba4671340edd416f4715cb23fd122248aead1ec"
+    },
+    "esm650m": {
+      "file": "esm2_t33_650m_exact_plus_mean_sd_chunk480_overlap64_fp16.pt",
+      "backbone_model": "facebook/esm2_t33_650M_UR50D",
+      "backbone_type": "esm",
+      "bytes": 140150728,
+      "sha256": "9dfbe60fcde51a5447d358d1c963e70f9f28c2db860b3a0192e0211c13c02479"
+    },
+    "protbert": {
+      "file": "protbert_exact_plus_mean_sd_chunk480_overlap64_fp16.pt",
+      "backbone_model": "Rostlab/prot_bert",
+      "backbone_type": "protbert",
+      "bytes": 112178670,
+      "sha256": "9c7ee09637c9e2e54ef669257cb007e8df8aee14ca7e848548fbae0de1c6c1f1"
+    }
+  }
+}
