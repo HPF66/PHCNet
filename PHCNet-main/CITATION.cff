@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "PHCNet: Context-Aware Prediction of Peptide and Protein Half-Life"
+message: "Please cite this repository and the PEPlife2 data source."
+type: software
+authors:
+  - family-names: Chen
+    given-names: Qianfeng
+license: MIT
+repository-code: "https://github.com/HPF66/PHCNet"
+url: "https://github.com/HPF66/PHCNet"
+keywords:
+  - peptide half-life
+  - protein half-life
+  - protein language model
+  - regression
+  - physicochemical features

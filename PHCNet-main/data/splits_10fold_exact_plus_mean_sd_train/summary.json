@@ -1,0 +1,419 @@
+{
+  "source_database": "PEPlife2",
+  "source_url": "https://webs.iiitd.edu.in/raghava/peplife2/",
+  "source_citation": "Alam U, Chaudhary K, Kumar N, Tomer R, Patiyal S, Raghava GPS. PEPlife2: An Updated Repository of the Half-Life of Peptides and Proteins. Immuno. 2026;6(2):26.",
+  "source_doi": "10.3390/immuno6020026",
+  "redistribution_status": "processed records and derived split files may be redistributed with retained PEPlife2 attribution",
+  "exact_source": "processed PEPlife2 exact records; upstream preprocessing inputs are not packaged",
+  "uncertain_source": "processed PEPlife2 uncertain records; upstream preprocessing inputs are not packaged",
+  "locked_exact_splits": "derived from the locked exact-label random 10-fold assignment",
+  "combined_csv": "../../data/peplife2_exact_plus_mean_sd.csv",
+  "excluded_audit_csv": "not packaged",
+  "outdir": ".",
+  "n_exact": 1556,
+  "n_uncertain_source": 905,
+  "n_mean_sd_raw": 693,
+  "n_mean_sd_duplicate_groups": 685,
+  "n_mean_sd_duplicate_excess_rows": 8,
+  "n_mean_sd_accepted": 655,
+  "n_mean_sd_excluded_source_rows": 30,
+  "mean_sd_exclusion_counts": {
+    "condition_overlaps_exact": 27,
+    "reported_error_ge_mean": 2,
+    "invalid_nonpositive_or_nonfinite_mean_sd": 1
+  },
+  "n_combined": 2211,
+  "condition_overlap_key": [
+    "sequence_modified",
+    "species_group",
+    "matrix_group",
+    "vivo_vitro_clean",
+    "test_sample",
+    "assay"
+  ],
+  "mean_sd_duplicate_key": [
+    "pmid",
+    "sequence_modified",
+    "species_group",
+    "matrix_group",
+    "vivo_vitro_clean",
+    "test_sample",
+    "assay",
+    "half_life_minutes_estimate",
+    "half_life_error_minutes"
+  ],
+  "label_error_log10_formula": "error_minutes / (mean_minutes * ln(10))",
+  "outer_test_policy": "Only the original 1556 exact labels rotate through the locked random 10-fold outer tests. Mean+SD labels never enter outer tests.",
+  "splits": [
+    {
+      "split_id": 1,
+      "train": {
+        "n": 2056,
+        "n_exact": 1401,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.1236184300260605
+      },
+      "train_exact": {
+        "n": 1401,
+        "n_exact": 1401,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.224679907309065
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 155,
+        "n_exact": 155,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.16115091,
+        "target_max_log10": 4.3862492,
+        "target_mean_log10": 2.2132436948387095
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 2,
+      "train": {
+        "n": 2055,
+        "n_exact": 1400,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 4.9380191,
+        "target_mean_log10": 2.1219371694615963
+      },
+      "train_exact": {
+        "n": 1400,
+        "n_exact": 1400,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 4.9380191,
+        "target_mean_log10": 2.22228424375
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 156,
+        "n_exact": 156,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.09691001,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.2348165486538463
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 3,
+      "train": {
+        "n": 2056,
+        "n_exact": 1401,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.123452428654465
+      },
+      "train_exact": {
+        "n": 1401,
+        "n_exact": 1401,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.224436296445396
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 155,
+        "n_exact": 155,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.4034029,
+        "target_max_log10": 4.58160837,
+        "target_mean_log10": 2.2154456227096775
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 4,
+      "train": {
+        "n": 2055,
+        "n_exact": 1400,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.122494902313178
+      },
+      "train_exact": {
+        "n": 1400,
+        "n_exact": 1400,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.4034029,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.2231029159
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 156,
+        "n_exact": 156,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 4.58972626,
+        "target_mean_log10": 2.2274694908974357
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 5,
+      "train": {
+        "n": 2055,
+        "n_exact": 1400,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.1223108322547835
+      },
+      "train_exact": {
+        "n": 1400,
+        "n_exact": 1400,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.2228327273499997
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 156,
+        "n_exact": 156,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.09691001,
+        "target_max_log10": 4.89396139,
+        "target_mean_log10": 2.2298942599358975
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 6,
+      "train": {
+        "n": 2055,
+        "n_exact": 1400,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.1222757717389684
+      },
+      "train_exact": {
+        "n": 1400,
+        "n_exact": 1400,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.2227812635214286
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 156,
+        "n_exact": 156,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.10237291,
+        "target_max_log10": 4.64147411,
+        "target_mean_log10": 2.2303561148076922
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 7,
+      "train": {
+        "n": 2055,
+        "n_exact": 1400,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.1223330855783846
+      },
+      "train_exact": {
+        "n": 1400,
+        "n_exact": 1400,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.2228653920499997
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 156,
+        "n_exact": 156,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.30103,
+        "target_max_log10": 4.72263392,
+        "target_mean_log10": 2.229601115192308
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 8,
+      "train": {
+        "n": 2056,
+        "n_exact": 1401,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.123696779982286
+      },
+      "train_exact": {
+        "n": 1401,
+        "n_exact": 1401,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.224794887687366
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 155,
+        "n_exact": 155,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.12493874,
+        "target_max_log10": 4.23754374,
+        "target_mean_log10": 2.212204420580645
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 9,
+      "train": {
+        "n": 2055,
+        "n_exact": 1400,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.122448678936049
+      },
+      "train_exact": {
+        "n": 1400,
+        "n_exact": 1400,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.223035066585714
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 156,
+        "n_exact": 156,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.30103,
+        "target_max_log10": 4.9380191,
+        "target_mean_log10": 2.2280783950000003
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    },
+    {
+      "split_id": 10,
+      "train": {
+        "n": 2056,
+        "n_exact": 1401,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.123557955069835
+      },
+      "train_exact": {
+        "n": 1401,
+        "n_exact": 1401,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.43572857,
+        "target_max_log10": 5.16554108,
+        "target_mean_log10": 2.224591158907923
+      },
+      "train_mean_sd": {
+        "n": 655,
+        "n_exact": 0,
+        "n_mean_sd": 655,
+        "target_min_log10": -0.823908740944,
+        "target_max_log10": 3.88536122003,
+        "target_mean_log10": 1.907454873272642
+      },
+      "test": {
+        "n": 155,
+        "n_exact": 155,
+        "n_mean_sd": 0,
+        "target_min_log10": -0.15490196,
+        "target_max_log10": 4.28546729,
+        "target_mean_log10": 2.214045865870968
+      },
+      "test_policy": "locked existing random 10-fold exact rows only",
+      "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+    }
+  ]
+}

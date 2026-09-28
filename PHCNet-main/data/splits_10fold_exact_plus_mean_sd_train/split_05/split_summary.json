@@ -1,0 +1,37 @@
+{
+  "split_id": 5,
+  "train": {
+    "n": 2055,
+    "n_exact": 1400,
+    "n_mean_sd": 655,
+    "target_min_log10": -0.823908740944,
+    "target_max_log10": 5.16554108,
+    "target_mean_log10": 2.1223108322547835
+  },
+  "train_exact": {
+    "n": 1400,
+    "n_exact": 1400,
+    "n_mean_sd": 0,
+    "target_min_log10": -0.43572857,
+    "target_max_log10": 5.16554108,
+    "target_mean_log10": 2.2228327273499997
+  },
+  "train_mean_sd": {
+    "n": 655,
+    "n_exact": 0,
+    "n_mean_sd": 655,
+    "target_min_log10": -0.823908740944,
+    "target_max_log10": 3.88536122003,
+    "target_mean_log10": 1.907454873272642
+  },
+  "test": {
+    "n": 156,
+    "n_exact": 156,
+    "n_mean_sd": 0,
+    "target_min_log10": -0.09691001,
+    "target_max_log10": 4.89396139,
+    "target_mean_log10": 2.2298942599358975
+  },
+  "test_policy": "locked existing random 10-fold exact rows only",
+  "mean_sd_policy": "deduplicated auxiliary rows included in training only"
+}
